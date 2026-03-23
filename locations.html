@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicaciones - Simpsons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>
+            <img src="https://thesimpsonsapi.com/hero.webp" width="100" height="70">
+            <span class="donut">🍩</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="episodes.html">Episodios</a></li>
+            <li><a href="locations.html">Ubicaciones</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="personajes-section">
+        <h2>📍 Ubicaciones de Springfield</h2>
+
+        <div id="locations-container" class="personajes-container"></div>
+
+        <!-- PAGINACIÓN -->
+        <div class="pagination">
+            <button id="prev">⬅ Anterior</button>
+            <span id="page-info"></span>
+            <button id="next">Siguiente ➡</button>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Los Simpson Fan Page</p>
+</footer>
+
+<script src="locations.js"></script>
+</body>
+</html>

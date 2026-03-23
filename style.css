@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+header {
+    background-color: #ffd90f;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.donut {
+    font-size: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d62828;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    text-align: center;
+}
+.banner span {
+    display: inline-block;
+    font-size: 100px;
+    animation: girar 4s linear infinite;
+}
+.banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-logo {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.banner p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* SECCIÓN PERSONAJES */
+.personajes-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.personajes-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* GRID DE PERSONAJES */
+.personajes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    border: 4px solid #ffd90f;
+    background: #fff3a0;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    
+}
+
+/* LOADING */
+.loading {
+    grid-column: 1 / -1;
+    font-size: 18px;
+    color: #777;
+}
+
+/* FOOTER */
+footer {
+    background: #ffd90f;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+/*PAGINATION*/
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: none;
+    background: #ffd90f;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/*MODAL*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* BANNER */
+    .banner-img {
+        height: 200px;
+    }
+
+    .banner-logo {
+        width: 180px;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    /* PERSONAJES GRID */
+    .personajes-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARD */
+    .card img {
+        height: 180px;
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

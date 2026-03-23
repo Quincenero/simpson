@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Simpsons</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <Header>
+        
+        <nav>
+            <div>
+                
+                <img src="https://thesimpsonsapi.com/hero.webp" alt="Logo de los Simpsons" width="100" height="70">
+                <span class="donut">🍩</span>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="characters.html">Personajes</a></li>
+                <li><a href="episodes.html">Episodios</a></li>
+                <li><a href="locations.html">Ubicaciones</a></li>
+            </ul>
+        </nav>
+    </Header>
+
+    <main>
+        <div class="banner">
+            <img src="https://thesimpsonsapi.com/clouds-bg.jpg" alt="Fondo nubes" class="banner-img">
+            <div class="banner-content">
+                <span>🍩</span>
+                <h1>¡La familia más divertida!</h1>
+                <p>Conoce a todos los personajes de Springfield</p>
+            </div>
+        </div>
+
+         <section class="personajes-section">
+            <h2>✨ Personajes de Springfield ✨</h2>
+            <div id="personajes-container" class="personajes-container">
+                <div class="loading">Cargando personajes...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Los Simpson Fan Page | Contenido no oficial</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
