@@ -10,47 +10,53 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <div>
-            <img src="https://thesimpsonsapi.com/hero.webp" alt="Personajes de Los Simpsons" width="100" height="70">
-            <span class="donut">🍩</span>
+    <header>
+        <button id="btnTop">🍩</button>
+
+        <nav>
+            <div>
+                <img src="https://thesimpsonsapi.com/hero.webp" alt="Personajes de Los Simpsons" width="100" height="70">
+                <span class="donut">🍩</span>
+            </div>
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="personajes-section">
+            <h2> Todos los personajes</h2>
+
+            <div id="personajes-container" class="personajes-container"></div>
+
+            <!-- PAGINACIÓN -->
+            <div class="pagination">
+                <button id="prev">⬅ Anterior</button>
+                <span id="page-info"></span>
+                <button id="next">Siguiente ➡</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Los Simpson Fan Page</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modal-body"></div>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="episodes.html">Episodios</a></li>
-            <li><a href="locations.html">Ubicaciones</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="personajes-section">
-        <h2> Todos los personajes</h2>
-
-        <div id="personajes-container" class="personajes-container"></div>
-
-        <!-- PAGINACIÓN -->
-        <div class="pagination">
-            <button id="prev">⬅ Anterior</button>
-            <span id="page-info"></span>
-            <button id="next">Siguiente ➡</button>
-        </div>
-
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Los Simpson Fan Page</p>
-</footer>
-
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span id="closeModal" class="close">&times;</span>
-        <div id="modal-body"></div>
     </div>
-</div>
-<script src="characters.js"></script>
+
+    <script src="./botonUp.js"></script>
+    <script src="./menu.js"></script>
+    <script src="characters.js"></script>
 </body>
 </html>

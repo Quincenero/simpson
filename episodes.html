@@ -8,41 +8,47 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <div>
-            <img src="https://thesimpsonsapi.com/hero.webp" width="100" height="70">
-            <span class="donut">🍩</span>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="episodes.html">Episodios</a></li>
-            <li><a href="locations.html">Ubicaciones</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <button id="btnTop">🍩</button>
 
-<main>
-    <section class="personajes-section">
-        <h2>🎬 Episodios</h2>
+        <nav>
+            <div>
+                <img src="https://thesimpsonsapi.com/hero.webp" width="100" height="70">
+                <span class="donut">🍩</span>
+            </div>
+            <div class="hamburger" id="hamburger">☰</div>
 
-        <div id="episodes-container" class="personajes-container"></div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- PAGINACIÓN -->
-        <div class="pagination">
-            <button id="prev">⬅ Anterior</button>
-            <span id="page-info"></span>
-            <button id="next">Siguiente ➡</button>
-        </div>
+    <main>
+        <section class="personajes-section">
+            <h2>🎬 Episodios</h2>
 
-    </section>
-</main>
+            <div id="episodes-container" class="personajes-container"></div>
 
-<footer>
-    <p>&copy; 2026 Los Simpson Fan Page</p>
-</footer>
+            <!-- PAGINACIÓN -->
+            <div class="pagination">
+                <button id="prev">⬅ Anterior</button>
+                <span id="page-info"></span>
+                <button id="next">Siguiente ➡</button>
+            </div>
 
-<script src="episodes.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Los Simpson Fan Page</p>
+    </footer>
+
+    <script src="./botonUp.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./episodes.js"></script>
 </body>
 </html>
